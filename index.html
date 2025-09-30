@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>跳转到 Welink 微服务页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: "Microsoft YaHei", Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0;}
+        .container { max-width: 700px; margin: 60px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #eee; padding: 36px;}
+        h1 { color: #0078d4; }
+        p { font-size: 18px; color: #333;}
+        .footer { text-align: center; margin-top: 40px; color: #aaa;}
+    </style>
+    <script>
+        // 页面加载后自动跳转
+        window.onload = function() {
+            window.location.href = "welink://works.huawei.com?uri=h5%3A%2F%2F931755228387804%2Fhtml%2Findex.html";
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>正在跳转到微服务 Welink 页面...</h1>
+        <p>如果没有自动跳转，请点击下方按钮。</p>
+        <button onclick="window.location.href='welink://works.huawei.com?uri=h5%3A%2F%2F931755228387804%2Fhtml%2Findex.html'">立即跳转</button>
+        <ul>
+            <li>目标链接：<code>welink://works.huawei.com?uri=h5%3A%2F%2F931755228387804%2Fhtml%2Findex.html</code></li>
+        </ul>
+    </div>
+    <div class="footer">
+        &copy; 2025 微服务示例 | Powered by GitHub Copilot
+    </div>
+</body>
+</html>
